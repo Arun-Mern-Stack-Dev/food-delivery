@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css => cascading style sheet -->
+    <!-- Three ways we can write css -->
+
+    <!-- CSS RULE :  -->
+    <!-- selector  -->
+    <!-- {} => curly brace -->
+    <!-- : = > colon  -->
+    <!-- ; => semicolon -->
+    <!-- Tagname/.Classname/ #Idname {
+       property : value; 
+      } -->
+
+    <!-- 1. Internal CSS  -->
+    <!-- Inside HTML Document -->
+    <!-- <style>
+      h1 {
+        color: #293996;
+        background-color: beige;
+      }
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      h2 {
+        /* font properties */
+        font-size: 40px;
+        font-weight: 200;
+        font-style: italic;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+    </style> -->
+
+    <!-- 2. Inline Css  -->
+
+    <!-- 3. External CSS -->
+    <!-- relatable -->
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <!-- HEADINGS TAG -->
+    <!-- h1 - h6 Tag -->
+    <h1 class="heading-text" id="heading-2">This is Heading 1</h1>
+    <h2 style="color: blueviolet">This is Heading 2</h2>
+    <h3>This is Heading 3</h3>
+    <h4>This is Heading 4</h4>
+    <h5>This is Heading 5</h5>
+    <h6>This is Heading 6</h6>
+
+    <h1 class="title">What is MERN Stack ?</h1>
+    <!-- paragraph tag -->
+    <p>
+      Hypertext Markup Language (HTML) is the standard[dubious – discuss] markup
+      language[a] for documents designed to be displayed in a web browser. It
+      defines the content and structure of web content. It is often assisted by
+      technologies such as Cascading Style Sheets (CSS) and scripting languages
+      such as JavaScript.
+    </p>
+    <h1 class="title">What is HTML Stack ?</h1>
+    <p>
+      Hypertext Markup Language (HTML) is the standard[dubious – discuss] markup
+      language[a] for documents designed to be displayed in a web browser. It
+      defines the content and structure of web content. It is often assisted by
+      technologies such as Cascading Style Sheets (CSS) and scripting languages
+      such as JavaScript.
+    </p>
+
+    <!-- anchor Tag -->
+    <!-- hyperlink reference -->
+    <a href="https://www.google.com/" target="_blank">Google</a>
+
+    <!-- Image Tag -->
+    <!-- self closing tag -->
+    <!-- src => source       alt => alternative -->
+    <img src="/assets/HTML-Tutorials.png" alt="html-css-image" />
+
+    <!-- Bold Tag -->
+    <b>Bold Tag</b>
+    <!-- Itallic Tag -->
+    <i>This is Itallic Text</i>
+
+    <!-- Two types of Tags/Elements 
+    1. Block Level Elements 
+    2. Inline Level Elements -->
+    <!-- Division Tag -->
+    <div style="background-color: grey">This is Division Tag</div>
+
+    <span style="background-color: aquamarine">This is span Tag</span>
+
+    <!-- Lists -->
+    <!-- 1. unordered Lists  -->
+    <div>
+      <ul class="ul-lists">
+        <!-- Lists -->
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+      </ul>
+      <!-- 2. Ordered Lists  -->
+      <ol>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+      </ol>
+    </div>
+
+    <!-- How to create TABLE in by using HTML -->
+    <table>
+      <!-- Table row -->
+      <tr>
+        <!-- Table Head -->
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+
+      <tr>
+        <!-- Table Data -->
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+    </table>
+
+    <h3>Select Your State:</h3>
+    <select>
+      <option>Tamil nadu</option>
+      <option>bangalore</option>
+      <option>Kerala</option>
+      <option>Dlehi</option>
+    </select>
+
+    <input type="text" list="state-values" />
+
+    <datalist id="state-values">
+      <option>Tamil nadu</option>
+      <option>bangalore</option>
+      <option>Kerala</option>
+      <option>Dlehi</option>
+    </datalist>
+
+    <form onsubmit="">
+      <label for="email">Enter Your Email :</label>
+      <input type="email" value="" name="email" />
+
+      <label for="password">Enter Your password :</label>
+      <input type="password" value="" name="password" />
+
+      <input type="button" value="Submit" />
+      <!-- <button>Submit</button> -->
+    </form>
+
+    <!-- FLEXBOX CSS -->
+    <div class="flexbox-container">
+      <div class="flex-child">1</div>
+      <div class="flex-child">2</div>
+      <div class="flex-child">3</div>
+      <div class="flex-child">4</div>
+      <div class="flex-child">5</div>
+      <div class="flex-child">6</div>
+    </div>
+  </body>
+</html>
